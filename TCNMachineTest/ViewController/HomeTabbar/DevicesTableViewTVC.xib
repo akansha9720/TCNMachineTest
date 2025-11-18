@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="170" id="KGk-i7-Jjw" customClass="DevicesTableViewTVC" customModule="TCNMachineTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-JZ-g3L">
+                        <rect key="frame" x="0.0" y="10" width="366" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFT-uu-5DO">
+                                <rect key="frame" x="20" y="20" width="44" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.gen2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="piK-2R-GTl">
+                                        <rect key="frame" x="7" y="7.3333333333333321" width="30" height="29.333333333333339"/>
+                                        <color key="tintColor" red="0.90980392160000001" green="0.63921568630000003" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="piK-2R-GTl" firstAttribute="top" secondItem="PFT-uu-5DO" secondAttribute="top" constant="7" id="60V-dt-BfZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="6fs-iW-fdC"/>
+                                    <constraint firstAttribute="width" constant="44" id="LG1-Cu-6s5"/>
+                                    <constraint firstItem="piK-2R-GTl" firstAttribute="leading" secondItem="PFT-uu-5DO" secondAttribute="leading" constant="7" id="U9w-oY-bdl"/>
+                                    <constraint firstAttribute="bottom" secondItem="piK-2R-GTl" secondAttribute="bottom" constant="7" id="aMj-2P-jWb"/>
+                                    <constraint firstAttribute="trailing" secondItem="piK-2R-GTl" secondAttribute="trailing" constant="7" id="sEB-ot-cj4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smartphones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7O-Wc-fuf">
+                                <rect key="frame" x="94" y="31.666666666666664" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-ru-j5x">
+                                <rect key="frame" x="20" y="74" width="326" height="56"/>
+                                <string key="text">The Creative Network is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a7O-Wc-fuf" firstAttribute="centerY" secondItem="piK-2R-GTl" secondAttribute="centerY" id="3Z6-4Z-ofT"/>
+                            <constraint firstItem="PFT-uu-5DO" firstAttribute="top" secondItem="7BC-JZ-g3L" secondAttribute="top" constant="20" id="JQN-Lx-pMx"/>
+                            <constraint firstAttribute="bottom" secondItem="Ofc-ru-j5x" secondAttribute="bottom" constant="20" id="PPg-Ci-f5J"/>
+                            <constraint firstItem="a7O-Wc-fuf" firstAttribute="leading" secondItem="PFT-uu-5DO" secondAttribute="trailing" constant="30" id="V49-Fi-iGJ"/>
+                            <constraint firstItem="Ofc-ru-j5x" firstAttribute="top" secondItem="PFT-uu-5DO" secondAttribute="bottom" constant="10" id="cFy-b3-apN"/>
+                            <constraint firstItem="Ofc-ru-j5x" firstAttribute="leading" secondItem="7BC-JZ-g3L" secondAttribute="leading" constant="20" id="cf4-wC-v9M"/>
+                            <constraint firstAttribute="trailing" secondItem="Ofc-ru-j5x" secondAttribute="trailing" constant="20" id="gyS-Bp-6TT"/>
+                            <constraint firstItem="PFT-uu-5DO" firstAttribute="leading" secondItem="7BC-JZ-g3L" secondAttribute="leading" constant="20" id="lAU-sd-pzY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="7BC-JZ-g3L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A2r-Vh-x6Z"/>
+                    <constraint firstItem="7BC-JZ-g3L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="btM-L5-o4n"/>
+                    <constraint firstAttribute="trailing" secondItem="7BC-JZ-g3L" secondAttribute="trailing" id="lCr-iy-bcH"/>
+                    <constraint firstAttribute="bottom" secondItem="7BC-JZ-g3L" secondAttribute="bottom" constant="10" id="sQV-xl-yM0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="deviceImg" destination="piK-2R-GTl" id="VSd-9v-vYt"/>
+                <outlet property="deviceNameTxtLbl" destination="a7O-Wc-fuf" id="FCL-R0-z3f"/>
+            </connections>
+            <point key="canvasLocation" x="164.8854961832061" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iphone.gen2" catalog="system" width="112" height="128"/>
+    </resources>
+</document>
